@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+html
+{
+    font-family: 'Zilla Slab', serif;
+}
+h1
+{
+    color: lightskyblue;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+h2,h3,h5
+{
+    color: darkgray;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+#kozepkep
+{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#idezet
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bored
+{
+    font-weight: bold;
+}
+#boredd
+{
+    background-color: lightgrey;
+}
