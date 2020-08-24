@@ -40,3 +40,39 @@ h2,h3,h5
 {
     background-color: lightgrey;
 }
+
+/*Szelektorok*/
+#bej-body
+{
+    background-color: #f0f0f0;
+}
+
+.login-div
+{
+padding: 15px;
+border: solid 1px #c0c0c0;
+box-shadow: 0 0 2px #777777;
+display: inline-block;
+}
+/* többszörösen összetett Szelektor*/
+.login-div input /*login-div-en belüli inputra vonatkozik a szóköz miatt*/
+{
+    display: block;
+    margin-bottom: 7px;
+}
+
+/*.login-div input[type="email"] /*attribútom jele:[]
+{
+    border: solid 1px blue;
+}
+
+.login-div input[type="password"]
+{
+    border: solid 1px red;
+}
+.login-div input[class*="red"] /* ^(ALT GR+3)-> Azzal kezdődik, hogy...; $ -> Azzal végződik, hogy... *->bárhol szerepelhet
+{
+    border: solid 1px yellowgreen;
+}*/
+
+/*Pszeudo-szelektor*/
