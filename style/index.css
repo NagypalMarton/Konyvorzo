@@ -6,11 +6,11 @@ body
     font-family: 'Zilla Slab', serif;
     font-size: medium;
     margin: 0;
-    background-color: darkgrey;
 }
 .notfelsomenu
 {
     padding: 0 10% 5% 10%;
+    font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6
 {
@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6
 }
 h2,h3,h4,h5,h6
 {
-    color: white;
+    color: lightgrey;
     margin-top: 0;
 }
 .felsomenu
@@ -50,7 +50,7 @@ h2,h3,h4,h5,h6
 
 .felsomenu a.active
 {
-  background-color: lightskyblue;
+  background-color:lightskyblue;
   color: white;
 }
 #kozepkep
@@ -64,25 +64,15 @@ h2,h3,h4,h5,h6
 #idezet
 {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-}
-
-.bored
-{
-    font-weight: bold;
-}
-#boredd
-{
-    background-color: lightgrey;
+    margin: 10px 35% 10px 35%;
 }
 
 /*Szelektorok*/
 
 .login-div
 {
-padding: 15px;
+padding: 25px;
+margin:15px 38% 15px 38%;
 border: solid 1px #c0c0c0;
 box-shadow: 0 0 2px #777777;
 display: inline-block;
@@ -96,16 +86,16 @@ text-align: center;
     margin: auto;
 }
 
-/*.login-div input[type="email"] /*attribútom jele:[]
+.login-div input[type="email"]
 {
-    border: solid 1px blue;
+    border: solid 2px lightskyblue;
 }
 
-.login-div input[type="password"]
-{
-    border: solid 1px red;
+.login-div input[type="password"]{
+    border: solid 2px lightgrey;
 }
-.login-div input[class*="red"] /* ^(ALT GR+3)-> Azzal kezdődik, hogy...; $ -> Azzal végződik, hogy... *->bárhol szerepelhet
+
+.login-div input[id="veznev"], .login-div input[id="knev"]
 {
-    border: solid 1px yellowgreen;
-}*/
+    border: solid 2px #00b7ff; /* #f5c242;*/
+}
