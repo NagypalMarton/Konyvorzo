@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="hun">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Könyvörző</title>
-    <link rel="stylesheet" href="/style/index.css">
-</head>
-
-<body>
-    <ul class="felsomenu">
-        <li><a href="/index.html">Főoldal</a></li>
-        <li><a href="visszajelzes.html">Visszajelzés</a></li>
-        <li><a href="aboutme.html">Rólunk</a></li>
-        <li><a href="tesztoldal.html">TESZT OLDAL</a></li>
-        <li><a href="books.html">Könyvek</a></li>
-        <li><a href="bej-reg.html">Bejelentkezés/Regisztráció</a></li>
-    </ul>
     <div class="notfelsomenu">
         <h1>
             Bejelentkezés/Regisztráció
@@ -62,6 +43,3 @@
             </DIV>
         </DIV>
     </div>
-</body>
-
-</html>

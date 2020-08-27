@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="hun">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Könyvörző</title>
-    <link rel="stylesheet" href="/style/index.css">
-</head>
-
-<body>
-    <ul class="felsomenu">
-        <li><a href="/index.html">Főoldal</a></li>
-        <li><a href="visszajelzes.html">Visszajelzés</a></li>
-        <li><a href="aboutme.html">Rólunk</a></li>
-        <li><a href="tesztoldal.html">TESZT OLDAL</a></li>
-        <li><a href="books.html">Könyvek</a></li>
-        <li><a href="bej-reg.html">Bejelentkezés/Regisztráció</a></li>
-    </ul>
     <div class="notfelsomenu">
         <h2>Könyvekről röviden</h2>
         <p> A könyv (nyomtatott papírkönyv) az UNESCO meghatározása szerint: Olyan, szövegből és
@@ -75,6 +56,3 @@
         alakot, a kifejezések (könyv szerinti érték, könyvelő, a könyvekben) tovább élnek a közgazdaságtan nyelvében.
         </p>
     </div>
-</body>
-
-</html>

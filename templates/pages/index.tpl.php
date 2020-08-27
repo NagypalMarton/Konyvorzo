@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="hun">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Könyvörző</title>
-    <link rel="stylesheet" href="/style/index.css">
-</head>
-
 <body>
     <ul class="felsomenu">
         <li><a href="index.html">Főoldal</a></li>
@@ -25,6 +16,3 @@
             href="https://medium.com/the-mission/if-you-only-read-a-few-books-in-2018-read-these-89d03fc149c6">
             <img id="kozepkep" src="https://miro.medium.com/max/4000/1*-T8oo_JoKkMxfnPKLt_Ciw.jpeg" alt="Fej alakú könyves polc"></a>
     </div>
-</body>
-
-</html>
