@@ -1,7 +1,6 @@
-    <div class="notfelsomenu">
-        <h1>Könyvörző</h1>
-        <h2>Magyar könyves közösségi oldal</h2>
-        Következőket kell tenni egy könyvvel:
+    <div id="notfelsomenu">
+   
+        <h3>Következőket kell tenni egy könyvvel:</h3>
         <ol>
             <li>Menj oda a könyvespolcodhoz!</li>
             <li>Keress egy jó könyvet, amit szívesen elolvasnál!</li>

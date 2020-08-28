@@ -1,10 +1,11 @@
-       <div class="notfelsomenu">
+ <div id="notfelsomenu">
+</div>  
     <h1>Rólunk</h1>
     <h2>Mit érdemes tudni a <em>Könyvörző</em> oldalról?</h2>
     <p>A <b>Könyvörző</b> oldal egy 2020-ban indult könyves közösségi oldal,
         amely feltett célja, hogy hazánk egyik leginovatívabb és olvasó központú weboldal legyen! Jelenleg a Könyvörző
         csapata egy főből áll, aki egy személyben végzi a fejlesztési, tesztelői és egyéb informatikai munkálatokat.</p>
-    <img id="kozepkep" src="/img/girl-book.jpg" alt="Lány egy könyvvel a folyó parton"
+    <img id="kozepkep" src="/images/girl-book.jpg" alt="Lány egy könyvvel a folyó parton"
         title="Lány egy könyvvel a folyó parton">
     <table id="idezet">
         <caption><strong><em>Fejlesztési ütem/állapot</em></strong> </caption>

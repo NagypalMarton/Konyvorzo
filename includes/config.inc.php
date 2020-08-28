@@ -24,6 +24,7 @@ $oldalak = array(
     'tesztoldal' => array('fajl' => 'tesztoldal', 'szoveg' => 'TESZT OLDAL', 'menun' => array(1,1)),
     'books' => array('fajl' => 'books', 'szoveg' => 'Könyvek', 'menun' => array(1,1)),
     'bej-reg' => array('fajl' => 'bej-reg', 'szoveg' => 'Bejelentkezés/Regisztráció', 'menun' => array(1,1)),
+    'bootstrap' => array('fajl' => 'bootstrap', 'szoveg' => 'Bootstrap 4', 'menun' => array(1,1)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');

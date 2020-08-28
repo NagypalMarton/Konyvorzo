@@ -1,4 +1,4 @@
-  <div class="notfelsomenu">
+  <div id="notfelsomenu">
     <h1>Visszajelzés</h1>
     <h3>Meghibásodott? Nem müködik megfelelően? Hiányolsz bizonyos funkciókat?</h3>
     <p>Az alábbi <b>űrlap</b> kitöltésével segítheted a munkánkat, hogy minél <i>olvasó központúbb</i> közösségi oldalt

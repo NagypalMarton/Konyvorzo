@@ -1,4 +1,4 @@
-    <div class="notfelsomenu">
+    <div id="notfelsomenu">
         <h1>
             Bejelentkezés/Regisztráció
         </h1>
