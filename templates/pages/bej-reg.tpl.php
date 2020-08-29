@@ -6,7 +6,7 @@
         <DIV class="login-div">
             <DIV class="form-group">
                 <LABEL for="email"> Email</LABEL>
-                <INPUT class="form-control" id="email" type="email" name="email">
+                <INPUT class="form-control" id="email" type="email" name="email" placeholder="felh.név@szolg.hu/com">
             </DIV>
 
             <DIV class="form-group">
@@ -30,7 +30,8 @@
             </DIV>
             <DIV class="form-group">
                 <LABEL for="email1"></LABELfor> Email cím</LABEL>
-                <INPUT class="form-control" id="email1" type="email" name="email">
+                <INPUT class="form-control" id="email1" type="email" name="email" placeholder="felh.név@szolg.hu/com">
+                <small id="email1" class="form-text text-muted">3. féllel nem osztjuk meg az email címet!</small>
             </DIV>
 
             <DIV class="form-group">

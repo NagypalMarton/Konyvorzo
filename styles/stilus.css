@@ -8,7 +8,6 @@ body
 }
 #notfelsomenu
 {
-    padding: 0 10% 5% 10%;
     font-size: 15px;
 }
 h1,h2,h3,h4,h5,h6
@@ -24,7 +23,12 @@ h2,h3,h4,h5,h6
     margin-top: 0;
 }
 
-#felsomenu
+#bt-alert
+{
+  text-align: center;
+}
+
+/*#felsomenu
 {
   overflow: hidden;
   background-color: #333;
@@ -32,7 +36,7 @@ h2,h3,h4,h5,h6
   margin: 0;
   padding: 0px;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+/*  position: sticky;
   top: 0;
 }
 
@@ -59,19 +63,17 @@ h2,h3,h4,h5,h6
 {
   background-color: #4CAF50;
   color:lightgrey;
-}
+}*/
 #kozepkep
 {
-    max-width: 75%;
+    max-width: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#idezet
-{
-    text-align: center;
-    margin: 10px 35% 10px 35%;
+#motto{
+  font-size: 90%;
 }
 
 /*Szelektorok*/
@@ -79,7 +81,7 @@ h2,h3,h4,h5,h6
 .login-div
 {
 padding: 25px;
-margin:15px 38% 15px 38%;
+/*margin:15px 38% 15px 38%;*/
 border: solid 1px #c0c0c0;
 box-shadow: 0 0 2px #777777;
 display: inline-block;
