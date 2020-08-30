@@ -28,42 +28,6 @@ h2,h3,h4,h5,h6
   text-align: center;
 }
 
-/*#felsomenu
-{
-  overflow: hidden;
-  background-color: #333;
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  position: -webkit-sticky; /* Safari */
-/*  position: sticky;
-  top: 0;
-}
-
-#felsomenu li
-{
-  float: left;
- display: inline;
-}
-
-#felsomenu a
-{
- display: block;
-  color: white;
- text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#felsomenu a:hover {
-  background-color: #111;
-}
-
-#felsomenu active
-{
-  background-color: #4CAF50;
-  color:lightgrey;
-}*/
 #kozepkep
 {
     max-width: 350px;
@@ -81,7 +45,6 @@ h2,h3,h4,h5,h6
 .login-div
 {
 padding: 25px;
-/*margin:15px 38% 15px 38%;*/
 border: solid 1px #c0c0c0;
 box-shadow: 0 0 2px #777777;
 display: inline-block;

@@ -1,5 +1,3 @@
-    <div id="notfelsomenu">
-   
         <h3>Következőket kell tenni egy könyvvel:</h3>
         <ol>
             <li>Menj oda a könyvespolcodhoz!</li>
@@ -17,4 +15,3 @@
             <li>Végezetül a könyv befejezte után meséld el az ismerőseidnek, barátaidnak, hogy milyen jó olvasmányt
                 találtál!</li>
         </ol>
-    </div>

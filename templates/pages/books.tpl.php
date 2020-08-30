@@ -1,4 +1,3 @@
-    <div id="notfelsomenu">
         <h2>Könyvekről röviden</h2>
         <p> A könyv (nyomtatott papírkönyv) az UNESCO meghatározása szerint: Olyan, szövegből és
                 ábrából
@@ -55,4 +54,3 @@
         könyvelésnek nevezett nyilvántartással. Noha a mai főkönyv általában egy adatbázis, és a könyvelés sem ölt könyv
         alakot, a kifejezések (könyv szerinti érték, könyvelő, a könyvekben) tovább élnek a közgazdaságtan nyelvében.
         </p>
-    </div>
