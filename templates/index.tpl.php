@@ -78,13 +78,13 @@
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-md">
         <!-- One of three columns-->
       </div>
-      <div class="col-12">
+      <div class="col-md-12">
         <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
       </div>
-      <div class="col">
+      <div class="col-md">
         <!--Three of three columns-->
       </div>
     </div>

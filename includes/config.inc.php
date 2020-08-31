@@ -19,12 +19,12 @@ $lablec = array(
 
 $oldalak = array(
     '/' => array('fajl' => 'index', 'szoveg' => 'Kezdőlap', 'menun' => array(1,1)),
+    'konyvteendok' => array('fajl' => 'konyvteendok', 'szoveg' => 'Könyvteendők', 'menun' => array(1,1)),
+    'books' => array('fajl' => 'books', 'szoveg' => 'Könyvek', 'menun' => array(1,1)),
+    'kfeltolt' => array('fajl' => 'kfeltolt', 'szoveg' => 'Könyv Feltöltése', 'menun' => array(1,1)),
+    'bej-reg' => array('fajl' => 'bej-reg', 'szoveg' => 'Bejelentkezés/Regisztráció', 'menun' => array(1,1)),
     'Visszajelzés' => array('fajl' => 'visszajelzes', 'szoveg' => 'Visszajelzés', 'menun' => array(1,1)),
     'aboutme' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk', 'menun' => array(1,1)),
-    'tesztoldal' => array('fajl' => 'tesztoldal', 'szoveg' => 'TESZT OLDAL', 'menun' => array(1,1)),
-    'books' => array('fajl' => 'books', 'szoveg' => 'Könyvek', 'menun' => array(1,1)),
-    'bej-reg' => array('fajl' => 'bej-reg', 'szoveg' => 'Bejelentkezés/Regisztráció', 'menun' => array(1,1)),
-    'bootstrap' => array('fajl' => 'bootstrap', 'szoveg' => 'Bootstrap 4', 'menun' => array(1,1)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
