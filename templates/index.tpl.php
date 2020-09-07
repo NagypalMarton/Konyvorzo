@@ -36,9 +36,6 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <!--<li class="nav-item active">
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>-->
         <?php foreach ($oldalak as $url => $oldal) {
 
           ?>
@@ -53,23 +50,32 @@
           } ?>
           <?php
         } ?>
-        <!--<li class="nav-item">
-                                  <a class="nav-link" href="./templates/pages/aboutme.tpl.php">Rólunk</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                  </a>
-                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                  </div>
-                                </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>-->
+<!--
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Új
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!--<a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+             <?php foreach ($aloldalak as $url => $oldal1) {
+
+          ?>
+
+          <?php if (! isset($_SESSION['login']) && $oldal1['menun'][0] || isset($_SESSION['login']) && $oldal1['menun'][1]) {
+            ?>
+            <li class="nav-item"<?= (($oldal1 == $keres) ? ' class="active"' : '') ?>>
+              <a class="dropdown-item" href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+                <?= $oldal1['szoveg'] ?></a>
+            </li>
+            <?php
+          } ?>
+          <?php
+        } ?>
+         <!-- <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>-->
+      </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Keresés az oldalon" aria-label="Search">
