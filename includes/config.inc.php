@@ -29,6 +29,7 @@ $oldalak = array(
 $aloldalak = array(
   'kfeltolt' => array('fajl' => 'kfeltolt', 'szoveg' => 'Új Könyv ', 'menun' => array(1, 1)),
   'szfeltolt' => array('fajl' => 'szfeltolt', 'szoveg' => 'Új Szerző', 'menun' => array(1, 1)),
+  'polc' => array('fajl' => 'polc', 'szoveg' => 'Új Polc', 'menun' => array(1, 1)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
