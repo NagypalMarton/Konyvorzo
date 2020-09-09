@@ -57,7 +57,7 @@
         } ?>
         <!--Legördülő menű-->
 
-        <?php foreach ($aloldalak as $url => $oldal) { ?>
+        <?php foreach ($extrak as $url => $oldal) { ?>
         <?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
         <li class="nav-item dropdown" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
