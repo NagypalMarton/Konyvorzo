@@ -26,7 +26,7 @@ $oldalak = array(
   'aboutme' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk', 'menun' => array(1, 1)),
 );
 
-$aloldalak = array(
+$extrak = array(
   'kfeltolt' => array('fajl' => 'kfeltolt', 'szoveg' => 'Új Könyv ', 'menun' => array(1, 1)),
   'szfeltolt' => array('fajl' => 'szfeltolt', 'szoveg' => 'Új Szerző', 'menun' => array(1, 1)),
   'polc' => array('fajl' => 'polc', 'szoveg' => 'Új Polc', 'menun' => array(1, 1)),

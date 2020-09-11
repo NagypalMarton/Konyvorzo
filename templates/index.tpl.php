@@ -55,26 +55,27 @@
           } ?>
         <?php
         } ?>
-        <!--Legördülő menű-->
 
-        <?php foreach ($extrak as $url => $oldal) { ?>
-        <?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
-        <li class="nav-item dropdown" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+        <!--Legördülő menű-->
+        <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            ÚJ
+            Új
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>"><?= $oldal['szoveg'] ?></a>
+            <?php foreach ($extrak as $url => $oldal) { ?>
+            <li class="nav-item dropdown" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+              <a class="dropdown-item" href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+                <?= $oldal['szoveg'] ?></a>
+            </li>
+            <?php } ?>
           </div>
-        </li>
-        <?php } ?>
-        <?php } ?>
+        </div>
         <!--Legördülő menű vége-->
 
       </ul>
       <!--Lista vége-->
-      
+
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Keresés az oldalon" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
@@ -91,43 +92,43 @@
         <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
       </div>
       <div class="col-md">
-      <!--Three of three columns-->
+        <!--Three of three columns-->
       </div>
+    </div>
   </div>
-  </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
-    <footer>
-      <div class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <footer>
+    <div class="container">
 
-        <div class="row">
-          <div class="col-md-1">
-            <!--1 of 3-->
-          </div>
-          <div class="col-md-12">
-            <?php if (isset($lablec['copyright'])) {
+      <div class="row">
+        <div class="col-md-1">
+          <!--1 of 3-->
+        </div>
+        <div class="col-md-12">
+          <?php if (isset($lablec['copyright'])) {
 
             ?>&copy;&nbsp;<?= $lablec['copyright'] ?> <?php
 
           } ?>
-            &nbsp;
-            <?php if (isset($lablec['ceg'])) {
+          &nbsp;
+          <?php if (isset($lablec['ceg'])) {
             ?><?= $lablec['ceg']; ?><?php
           } ?>
-          </div>
-          <div class="col-md-1">
-            <!--3 of 3-->
-          </div>
+        </div>
+        <div class="col-md-1">
+          <!--3 of 3-->
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>

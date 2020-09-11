@@ -1,0 +1,37 @@
+Bootrstrap Dropdown
+===================
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+</li>
+
+Front Controllers menűs
+=======================
+<?php foreach ($oldalak as $url => $oldal) { ?>
+	<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+		<a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+		<?= $oldal['szoveg'] ?></a>
+	</li>
+<?php } ?>
+
+Összemixelve
+============
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Új
+          </a>
+          <?php foreach ($extrak as $url => $oldal) { ?>
+          <li class="nav-item dropdown" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+            <a class="dropdown-item" href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+              <?= $oldal['szoveg'] ?></a>
+          </li>
+          <?php } ?>
+</div>
