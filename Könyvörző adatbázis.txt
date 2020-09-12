@@ -1,0 +1,19 @@
+Könyvörző adatbázis adatok
+==========================
+
+Név:			konyvorzo_db
+karakterkódolás:	utf8_hungarian_ci
+
+Táblák
+======
+ko_users
+	veznev
+	knev
+	username
+	email
+	password
+
+ko_books
+	
+
+ko_authors	

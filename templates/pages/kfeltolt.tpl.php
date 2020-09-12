@@ -41,7 +41,7 @@
             <textarea class="form-control" id="konyvleiras" rows="5" required></textarea>
           </div>
         </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Küldés</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-paper-plane"></i> Küldés</button>
       </form>
     </div>
     <div class="col-md">

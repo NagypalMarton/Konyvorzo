@@ -25,7 +25,7 @@
       </div>
       <div class="form-group row">
         <div class="col-sm-8">
-          <button id="Kuld" type="submit" class="btn btn-primary">Küldés</button>
+          <button id="Kuld" type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Küldés</button>
         </div>
       </div>
     </form>
