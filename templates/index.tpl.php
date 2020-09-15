@@ -33,7 +33,7 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
       <img src="/images/kologo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-      Könyvörző
+      Könyvőrző
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
       <div class="col-md">
         <!-- One of three columns-->
       </div>
-      <div class="col-md-12">
+      <div class="col-md-10">
         <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
       </div>
       <div class="col-md">
@@ -123,6 +123,12 @@
           <?php if (isset($lablec['ceg'])) {
             ?><?= $lablec['ceg']; ?><?php
           } ?>
+          <?php foreach ($footer as $url => $oldal) { ?>
+          <li class="footerlista" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+            <a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+              <?= $oldal['szoveg'] ?></a>
+            </li>
+            <?php } ?>
         </div>
         <div class="col-md-1">
           <!--3 of 3-->

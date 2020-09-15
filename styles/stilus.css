@@ -12,12 +12,17 @@ html {
 body
 {
   font-family: 'Zilla Slab', serif;
-  margin: 0;
 }
 footer
 {
   color: gray;
   background-color: lightskyblue;
+  padding: 0.5%;
+}
+.container
+{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 p
 {
@@ -37,7 +42,24 @@ h2,h3,h4,h5,h6
 {
   color: lightgrey;
   text-align: center;
-  margin-top: 0;
+}
+
+.footerlista
+{
+  display: inline;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.footerlista a {
+  text-align: center;
+  color:whitesmoke;
+  text-decoration: none;
+}
+
+.footerlista a:hover {
+  background-color: gray;
 }
 
 #bt-alert
@@ -56,10 +78,6 @@ h2,h3,h4,h5,h6
 #motto {
   font-size: 90%;
   color: #696969;
-}
-
-button{
-  margin-bottom: 2%;
 }
 
 /*Szelektorok*/

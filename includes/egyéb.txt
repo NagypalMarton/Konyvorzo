@@ -12,7 +12,7 @@ Bootrstrap Dropdown
         </div>
 </li>
 
-Front Controllers menűs
+Front Controllers menüs
 =======================
 <?php foreach ($oldalak as $url => $oldal) { ?>
 	<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
