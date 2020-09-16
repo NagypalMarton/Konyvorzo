@@ -146,3 +146,12 @@ Front Controllers menüs
           </li>
           <?php } ?>
 </div>
+
+/* többszörösen összetett Szelektor*/
+/*login-div-en belüli inputra vonatkozik a szóköz miatt*/
+/*.login-div input
+{
+  display: block;
+  margin-bottom: 15px;
+  margin: auto;
+}*/

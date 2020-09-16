@@ -85,17 +85,10 @@ h2,h3,h4,h5,h6
 .login-div
 {
   padding: 25px;
-  /*border: solid 1px #c0c0c0;*/
+  border: solid 2px #c0c0c0;
   box-shadow: 0 0 2px #777777;
-  display: inline-block;
-  text-align: center;
-}
-/* többszörösen összetett Szelektor*/
-.login-div input /*login-div-en belüli inputra vonatkozik a szóköz miatt*/
-{
-  display: block;
-  margin-bottom: 7px;
-  margin: auto;
+ /* display: inline-block;
+  text-align: center;*/
 }
 
 .login-div input[type="email"]
