@@ -1,5 +1,7 @@
 <h1 class="w-auto p-3">
+
   Bejelentkezés <br> Regisztráció
+
 </h1>
 <div class="container">
   <div class="row">
@@ -43,72 +45,48 @@
     <div class="col-md-6">
       <h2>Regisztráció</h2>
 
-      <form action="regisztracio.php" method="post" class="needs-validation" novalidate>
+      <form action="regisztracio.php" method="post">
         <div class="login-div">
           <div class="form-row">
             <div class="form-group col mb-3">
               <label for="veznev"> Vezetéknév</label>
-              <input class="form-control is-invalid" aria-describedby="veznevfb" id="veznev" type="text" name="Vezetéknév" placeholder="Vezetéknév"
+              <input class="form-control" id="veznev" type="text" name="Vezetéknév" placeholder="Vezetéknév"
                 pattern="[A-Z,a-z, ]{3}*" required>
-                <div id="veznevfb" class="invalid-tooltip">
-                    Helytelen vezetéknév!
-                </div>
             </div>
             <div class="form-group col mb-3">
               <label for="knev"> Keresztnév</label>
-              <input class="form-control is-invalid" aria-describedby="knevfb" id="knev" type="text" name="Keresztnév" placeholder="Keresztnév"
+              <input class="form-control" id="knev" type="text" name="Keresztnév" placeholder="Keresztnév"
                 pattern="[A-Z,a-z, ]{3}*" required>
-                <div id="knevfb" class="invalid-tooltip">
-                    Helytelen keresztnév!
-                </div>
             </div>
           </div>
           <div class="form-group mb-3">
             <label for="username">Felhasználónév</label>
-            <input type="text" class="form-control is-invalid" aria-describedby="usernevfb" id="username" placeholder="Felhasználónév" pattern="[#a-zA-Z09]+"
+            <input type="text" class="form-control" id="username" placeholder="Felhasználónév" pattern="[#a-zA-Z09]+"
               required>
-              <div id="usernevfb" class="invalid-tooltip">
-                    Helytelen felhasználónév!
-                </div>
           </div>
           <div class="form-row">
             <div class="form-group col mb-3">
               <label for="email1"></label> Email cím</label>
-              <input class="form-control is-invalid" aria-describedby="email1fb" id="email1" type="email" name="email" required>
-              <div id="email1fb" class="invalid-tooltip">
-                    Helytelen email cím!
-              </div>
+              <input class="form-control" id="email1" type="email" name="email" placeholder="pl.: y@xc.ji" required>
             </div>
             <div class="form-group col mb-3">
               <label for="email2"></label> Email cím újra</label>
-              <input class="form-control is-invalid" aria-describedby="email2fb" id="email2" type="email" name="email" placeholder="pl.: y@xc.ji" required>
-              <div id="email2fb" class="invalid-tooltip">
-                    Helytelen email cím!
-              </div>
+              <input class="form-control" id="email2" type="email" name="email" placeholder="pl.: y@xc.ji" required>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col mb-3">
               <label for="pw"> Jelszó</label>
-              <input class="form-control red is-invalid" aria-describedby="pwfb" id="pw" type="password" name="Jelszó" placeholder="Jelszó" required>
-              <div id="pwfb" class="invalid-tooltip">
-                    Helytelen jelszó!
-              </div>
+              <input class="form-control red" id="pw" type="password" name="Jelszó" placeholder="Jelszó" required>
             </div>
             <div class="form-group col mb-3">
               <label for="pw1"> Jelszó újra</label>
-              <input class="form-control red is-invalid" aria-describedby="pw1vfb" id="pw1" type="password" name="Jelszó" placeholder="Jelszó" required>
-              <div id="pw1vfb" class="invalid-tooltip">
-                    Helytelen jelszó!
-              </div>
+              <input class="form-control red" id="pw1" type="password" name="Jelszó" placeholder="Jelszó" required>
             </div>
             <div class="form-check">
-              <input class="form-check-input is-invalid" aria-describedby="aszffb" id="aszf" name="aszf" type="checkbox" required>
+              <input class="form-check-input" id="aszf" name="aszf" type="checkbox" required>
               <label class="form-check-label" for="aszf">Elolvastam és elfogadom az <a target="_blank"
                   href="http://nagypalmarton.nhely.hu/?oldal=adatvedelem">Adatvédelmi tájékoztatót.</a></label>
-                  <div id="aszffb" class="invalid-tooltip">
-                    Kötelező elfogadni a regisztráció véglegesítéséhez!
-              </div>
             </div>
 
             <div class="form-group col">
