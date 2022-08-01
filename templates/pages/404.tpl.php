@@ -1,1 +1,0 @@
-<h1><center>404! Az oldal nem elérhető!</center></h1>

@@ -1,0 +1,15 @@
+div[class$='2'] {
+    /*2vel végződő div osztályokra érvényesíti*/
+    background-color: darkorange;
+}
+
+div[class$='8'] {
+    background-color: lightgoldenrodyellow;
+    color: rgb(123, 123, 123);
+    font-weight: 600;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+}
