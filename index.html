@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <!--Itt lett volna a fejléc!-->
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!--Fejléc-->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="/img/reader-310398.svg" alt="reader" width=""
                     height="28" class="d-inline-block align-text-top"> Könyvőrző</a>
@@ -32,11 +37,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Oldalaink
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#konyvKereso">Könyvkereső</a></li>
+                            <li><a class="dropdown-item" href="#szerzoKeresese">Szerző keresése</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -49,20 +54,19 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Keresés az oldalon" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" onclick="searchBtn(this)">Search</button>
+                    <button class="btn btn-outline-success" type="submit" onclick="searchBtn(this)">Keresés</button>
                 </form>
             </div>
         </div>
     </nav>
-</header>
-
-<body>
-    <div class="container-fluid text-center">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2">
                 <!---Column-->
             </div>
             <div class="col-sm-8">
+                <h1>Random Moly.hu-s idézetek</h1>
+                <p id="idezet"><I>ide kerül az idézetek!</I></p>
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet diam nunc. Maecenas aliquam
                     diam
@@ -72,7 +76,23 @@
                     fermentum laoreet sollicitudin. Nullam erat risus, blandit et luctus ac, finibus sit amet sapien.
                     Proin
                     ut commodo urna. Etiam ac gravida enim.</p>
-
+                <div id="konyvKereso">
+                    <h1>Könyv keresése</h1>
+                    <p>
+                    <form>
+                        <div class="mb-6">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="/img/monogram-33683.svg"
+                                        alt="T monogram" class="rounded" height="35"></span>
+                                <input type="text" class="form-control" placeholder="Könyvcím" aria-label="Konyvcim"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                            <div id="emailHelp" class="form-text">Pontosan adja meg a könyvnek a címét!</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Könyv keresése</button>
+                    </form>
+                    </p>
+                </div>
 
                 <p>Mauris tempus euismod elit et fringilla. Proin pellentesque ut nisi non hendrerit. Nunc accumsan
                     ligula
@@ -109,6 +129,23 @@
                     sollicitudin convallis. Praesent non tincidunt leo. Sed tincidunt dui eget tristique dapibus. Nunc
                     vitae
                     dignissim neque.</p>
+                <div id="szerzoKeresese">
+                    <h1>Szerző keresése</h1>
+                    <p>
+                    <form>
+                        <div class="mb-6">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="/img/william-shakespeare-7313917_1280.png"
+                                        alt="T monogram" class="rounded" height="35"></span>
+                                <input type="text" class="form-control" placeholder="Szerző keresése" aria-label="szerzoKeres"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                            <div id="emailHelp" class="form-text">Pontosan adja meg a Szerző nevét!</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Szerző keresése</button>
+                    </form>
+                    </p>
+                </div>
             </div>
             <div class="col-sm-2">
                 <!---Column-->
