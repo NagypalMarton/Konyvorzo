@@ -54,3 +54,6 @@ nav form[class="btn btn-outline-success"]:hover{
     font-weight: 600;
     color:pink;
 }
+#konyvKereso,table{
+    margin-top: 3%;
+}

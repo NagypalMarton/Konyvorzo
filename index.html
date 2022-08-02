@@ -79,7 +79,7 @@
                 <div id="konyvKereso" class="table-responsive">
                     <h1>Könyvek vagy szerzők keresése</h1>
                     <p>
-                    <form>
+                    <form action="javascript:void(0);">
                         <div class="mb-6">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping"><img src="/img/monogram-33683.svg"
@@ -87,36 +87,13 @@
                                 <input type="text" class="form-control" placeholder="Könyvcím" aria-label="Konyvcim"
                                     aria-describedby="addon-wrapping">
                             </div>
-                            <div id="emailHelp" class="form-text">Adja meg a könyvnek vagy a serzőnek a címét!</div>
+                            <div id="emailHelp" class="form-text">Adja meg a könyvnek vagy a szerzőnek a címét!</div>
                         </div>
                         <button type="submit" class="btn btn-primary" onclick="konyvSzerzoKeres(this)">Keresés a
                             MOLY.HU-n</button>
                     </form>
-                    <table class="table table-striped table-hover">
-                        <caption>Szerző és művük listázása</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Szerző neve</th>
-                                <th scope="col">Kötet címe</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                            </tr>
-                        </tbody>
+                    <table id='CheckedWriterAuthor' class="table table-striped table-hover">
+                       <!--JsScript tölti majd ki!-->
                     </table>
                     </p>
                 </div>
@@ -159,7 +136,7 @@
                 <div id="szerzoKeresese">
                     <h1>Szerző keresése</h1>
                     <p>
-                    <form>
+                    <form action="javascript:void(0);">
                         <div class="mb-6">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping"><img
