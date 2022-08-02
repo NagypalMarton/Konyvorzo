@@ -12,9 +12,6 @@
 </head>
 <header>
     <!--Itt lett volna a fejléc!-->
-</header>
-
-<body>
     <nav class="navbar navbar-expand-lg sticky-top">
         <!--Fejléc-->
         <div class="container-fluid">
@@ -59,6 +56,9 @@
             </div>
         </div>
     </nav>
+</header>
+
+<body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2">
@@ -66,7 +66,7 @@
             </div>
             <div class="col-sm-8">
                 <h1>Random Moly.hu-s idézetek</h1>
-                <p id="idezet"><I>ide kerül az idézetek!</I></p>
+                <p id="idezet">Jelenleg nincs megjeleníthető Moly.hu-s idézet!</p>
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet diam nunc. Maecenas aliquam
                     diam
@@ -76,8 +76,8 @@
                     fermentum laoreet sollicitudin. Nullam erat risus, blandit et luctus ac, finibus sit amet sapien.
                     Proin
                     ut commodo urna. Etiam ac gravida enim.</p>
-                <div id="konyvKereso">
-                    <h1>Könyv keresése</h1>
+                <div id="konyvKereso" class="table-responsive">
+                    <h1>Könyvek vagy szerzők keresése</h1>
                     <p>
                     <form>
                         <div class="mb-6">
@@ -87,10 +87,37 @@
                                 <input type="text" class="form-control" placeholder="Könyvcím" aria-label="Konyvcim"
                                     aria-describedby="addon-wrapping">
                             </div>
-                            <div id="emailHelp" class="form-text">Pontosan adja meg a könyvnek a címét!</div>
+                            <div id="emailHelp" class="form-text">Adja meg a könyvnek vagy a serzőnek a címét!</div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Könyv keresése</button>
+                        <button type="submit" class="btn btn-primary" onclick="konyvSzerzoKeres(this)">Keresés a
+                            MOLY.HU-n</button>
                     </form>
+                    <table class="table table-striped table-hover">
+                        <caption>Szerző és művük listázása</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Szerző neve</th>
+                                <th scope="col">Kötet címe</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </p>
                 </div>
 
@@ -135,14 +162,16 @@
                     <form>
                         <div class="mb-6">
                             <div class="input-group flex-nowrap">
-                                <span class="input-group-text" id="addon-wrapping"><img src="/img/william-shakespeare-7313917_1280.png"
-                                        alt="T monogram" class="rounded" height="35"></span>
-                                <input type="text" class="form-control" placeholder="Szerző keresése" aria-label="szerzoKeres"
-                                    aria-describedby="addon-wrapping">
+                                <span class="input-group-text" id="addon-wrapping"><img
+                                        src="/img/william-shakespeare-7313917_1280.png" alt="T monogram" class="rounded"
+                                        height="35"></span>
+                                <input type="text" class="form-control" placeholder="Szerző keresése"
+                                    aria-label="szerzoKeres" aria-describedby="addon-wrapping">
                             </div>
                             <div id="emailHelp" class="form-text">Pontosan adja meg a Szerző nevét!</div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Szerző keresése</button>
+                        <button type="submit" class="btn btn-primary" onclick="szerzoKeres(this)">Szerző
+                            keresése</button>
                     </form>
                     </p>
                 </div>

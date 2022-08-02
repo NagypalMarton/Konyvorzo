@@ -35,6 +35,7 @@ p {
 
 #idezet {
     text-align: center;
+    font-style: italic;
 }
 
 #idezet:hover {
@@ -43,8 +44,13 @@ p {
     padding: 1%;
     background-color: white;
     color: orangered;
+    font-weight: 600;
 }
 #emailHelp{
     font-weight: bold;
     color: darkolivegreen;
+}
+nav form[class="btn btn-outline-success"]:hover{
+    font-weight: 600;
+    color:pink;
 }
