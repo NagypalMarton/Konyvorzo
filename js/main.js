@@ -32,20 +32,18 @@ function getData() {
     )
 }
 getData()
-let kivGomb
+
 function searchBtn(schBtn) {
     let searchText = schBtn.parentElement.firstElementChild.value
-    alert(`Ez egy kereső mező lesz! Beírt szöveg: ${searchText}`)
-    kivGomb = schBtn
-    // console.log(kivGomb)
+    getSearchData(searchText)
 }
 
 function konyvSzerzoKeres(konyvKeresBtn) {
-    // alert('Könyvet vagy Szerzőt fogok keresni!')
-    kivGomb = konyvKeresBtn
-    //console.log(kivGomb)
     let keresendoSzoveg = konyvKeresBtn.parentElement.firstElementChild.firstElementChild.lastElementChild.value
-    //console.log(keresendoSzoveg)
+    getSearchData(keresendoSzoveg)
+}
+function getSearchData(searchText) {
+    let keresendoSzoveg = searchText
     let fetchInit = {
         method: "GET", //CRUD => Create(POST) Read(GET) Update(PUT) Delete(DELETE)
         headers: new Headers(),
@@ -56,19 +54,10 @@ function konyvSzerzoKeres(konyvKeresBtn) {
         err => alert(err)
     ).then(
         WriterAuthor => {
-            //console.log(WriterAuthor['books'])
             createTableCheckedWriterAuthor(WriterAuthor['books'])//addEventListener-rel nem kellene megcsinálni?
         }
     );
 }
-
-function szerzoKeres(szerzoKeresBtn) {
-    // console.log(szerzoKeresBtn)
-    alert('Szerzőt fogok keresni!')
-    kivGomb = szerzoKeresBtn
-    // console.log(kivGomb)
-}
-
 function createTableCheckedWriterAuthor(WriterAuthor) {
     let table = document.querySelector('#CheckedWriterAuthor')
 
@@ -90,9 +79,10 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
     let theadCreate = document.createElement("thead")
     theadCreate.className = "table-light"
     let tr = document.createElement("tr")
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         let th = document.createElement("th")
         th.setAttribute("scope", "col")
+        th.className = "align-middle"
         switch (i) {
             case 0:
                 th.innerHTML = "#"
@@ -102,6 +92,9 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
                 break;
             case 2:
                 th.innerHTML = "Kötet címe"
+                break;
+            case 3:
+                th.innerHTML = "Részletek megtekintése"
                 break;
         }
         tr.appendChild(th)
@@ -119,14 +112,25 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
         th.innerHTML = parseInt(k) + 1
         th.setAttribute("scope", "row")
         tr.appendChild(th)
+        tr.className = "align-middle"
         for (let value of Object.values(WriterAuthor[k])) {
             if (typeof (value) != typeof (1)) {//value != k
                 let td = document.createElement("td")
+                td.className = "align-middle"
                 td.innerHTML = value
                 tr.appendChild(td)
             }
         }
+        let infoBtn = document.createElement("button")
+        infoBtn.type = "button"
+        infoBtn.className = "btn btn-outline-light align-middle"
+        infoBtn.innerHTML = '<i class="fa-solid fa-circle-info"></i> Részletek'
+        tr.appendChild(infoBtn)
+        infoBtn.setAttribute("onclick","detailsBtn(this)")
         tbodyCreate.appendChild(tr)
         table.appendChild(tbodyCreate)
     }
+}
+function detailsBtn(dBtn) {
+    alert('NINCS kész funkció!')
 }

@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/86f6c9e147.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <!--Itt lett volna a fejléc!-->
@@ -49,9 +50,11 @@
                         <a class="nav-link disabled">Feedback</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Keresés az oldalon" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" onclick="searchBtn(this)">Keresés</button>
+                <form class="d-flex" role="search" action="javascript:void(0);">
+                    <input class="form-control me-2" type="search" placeholder="Keresendő mű vagy szerző"
+                        aria-label="Search" required>
+                    <button class="btn btn-outline-success" type="submit" onclick="searchBtn(this)"> <i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </div>
@@ -77,23 +80,23 @@
                     Proin
                     ut commodo urna. Etiam ac gravida enim.</p>
                 <div id="konyvKereso" class="table-responsive">
-                    <h1>Könyvek vagy szerzők keresése</h1>
+                    <h1>Könyvek vagy szerzők gyors keresése</h1>
                     <p>
                     <form action="javascript:void(0);">
                         <div class="mb-6">
                             <div class="input-group flex-nowrap">
                                 <span class="input-group-text" id="addon-wrapping"><img src="/img/monogram-33683.svg"
                                         alt="T monogram" class="rounded" height="35"></span>
-                                <input type="text" class="form-control" placeholder="Könyvcím" aria-label="Konyvcim"
-                                    aria-describedby="addon-wrapping">
+                                <input type="text" class="form-control" placeholder="Könyv vagy Szerző címe"
+                                    aria-label="Konyvcim" aria-describedby="addon-wrapping" required>
                             </div>
                             <div id="emailHelp" class="form-text">Adja meg a könyvnek vagy a szerzőnek a címét!</div>
                         </div>
                         <button type="submit" class="btn btn-primary" onclick="konyvSzerzoKeres(this)">Keresés a
                             MOLY.HU-n</button>
                     </form>
-                    <table id='CheckedWriterAuthor' class="table table-striped table-hover">
-                       <!--JsScript tölti majd ki!-->
+                    <table id='CheckedWriterAuthor' class="table table-striped table-hover table align-middle">
+                        <!--JsScript tölti majd ki!-->
                     </table>
                     </p>
                 </div>
@@ -134,7 +137,7 @@
                     vitae
                     dignissim neque.</p>
                 <div id="szerzoKeresese">
-                    <h1>Szerző keresése</h1>
+                    <h1>Részletes keresés</h1>
                     <p>
                     <form action="javascript:void(0);">
                         <div class="mb-6">
@@ -143,7 +146,7 @@
                                         src="/img/william-shakespeare-7313917_1280.png" alt="T monogram" class="rounded"
                                         height="35"></span>
                                 <input type="text" class="form-control" placeholder="Szerző keresése"
-                                    aria-label="szerzoKeres" aria-describedby="addon-wrapping">
+                                    aria-label="szerzoKeres" aria-describedby="addon-wrapping" required>
                             </div>
                             <div id="emailHelp" class="form-text">Pontosan adja meg a Szerző nevét!</div>
                         </div>
