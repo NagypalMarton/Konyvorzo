@@ -44,19 +44,37 @@ function konyvSzerzoKeres(konyvKeresBtn) {
 }
 function getSearchData(searchText) {
     let keresendoSzoveg = searchText
-    let fetchInit = {
-        method: "GET", //CRUD => Create(POST) Read(GET) Update(PUT) Delete(DELETE)
-        headers: new Headers(),
-        mode: "cors",
-        cache: "default"
-    }; fetch(`https://moly.hu/api/books.json?q=${keresendoSzoveg}&key=4f7679f7ec5f95a5c7f08da35c79df1b`, fetchInit).then(
-        data => data.json(),
-        err => alert(err)
-    ).then(
-        WriterAuthor => {
-            createTableCheckedWriterAuthor(WriterAuthor['books'])//addEventListener-rel nem kellene megcsinálni?
-        }
-    );
+    if (isNaN(parseInt(keresendoSzoveg)) || (keresendoSzoveg.length != '1234567890'.length && keresendoSzoveg.length != '1234567890123'.length)) {
+        let fetchInit = {
+            method: "GET", //CRUD => Create(POST) Read(GET) Update(PUT) Delete(DELETE)
+            headers: new Headers(),
+            mode: "cors",
+            cache: "default"
+        }; fetch(`https://moly.hu/api/books.json?q=${keresendoSzoveg}&key=4f7679f7ec5f95a5c7f08da35c79df1b`, fetchInit).then(
+            data => data.json(),
+            err => alert(err)
+        ).then(
+            WriterAuthor => {
+                console.log(WriterAuthor['books'])
+                createTableCheckedWriterAuthor(WriterAuthor['books'])//addEventListener-rel nem kellene megcsinálni?
+            }
+        );
+    } else {
+        let fetchInit = {
+            method: "GET", //CRUD => Create(POST) Read(GET) Update(PUT) Delete(DELETE)
+            headers: new Headers(),
+            mode: "cors",
+            cache: "default"
+        }; fetch(`https://moly.hu/api/book_by_isbn.json?q=${keresendoSzoveg}&key=4f7679f7ec5f95a5c7f08da35c79df1b`, fetchInit).then(
+            data => data.json(),
+            err => alert(err)
+        ).then(
+            WriterAuthor => {
+                console.log(WriterAuthor)
+                createTableCheckedWriterAuthor(WriterAuthor)//addEventListener-rel nem kellene megcsinálni?
+            }
+        );
+    }
 }
 function createTableCheckedWriterAuthor(WriterAuthor) {
     let table = document.querySelector('#CheckedWriterAuthor')
@@ -106,6 +124,12 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
     let tbodyCreate = document.createElement("tbody")
     tbodyCreate.className = "table-group-divider"
 
+    //HA object, akkor tegye be egy arraybe és mehet
+    if(typeof(WriterAuthor) == 'object'){
+        alert(typeof(WriterAuthor))
+        alert('OBJECT TÍPUSÚ')
+    }
+
     for (let k in WriterAuthor) {
         let tr = document.createElement("tr")
         let th = document.createElement("th")
@@ -114,7 +138,7 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
         tr.appendChild(th)
         tr.className = "align-middle"
         for (let value of Object.values(WriterAuthor[k])) {
-            if (typeof (value) != typeof (1)) {//value != k
+            if (typeof (value) != typeof (1)) {
                 let td = document.createElement("td")
                 td.className = "align-middle"
                 td.innerHTML = value
@@ -126,7 +150,7 @@ function createTableCheckedWriterAuthor(WriterAuthor) {
         infoBtn.className = "btn btn-outline-light align-middle"
         infoBtn.innerHTML = '<i class="fa-solid fa-circle-info"></i> Részletek'
         tr.appendChild(infoBtn)
-        infoBtn.setAttribute("onclick","detailsBtn(this)")
+        infoBtn.setAttribute("onclick", "detailsBtn(this)")
         tbodyCreate.appendChild(tr)
         table.appendChild(tbodyCreate)
     }
